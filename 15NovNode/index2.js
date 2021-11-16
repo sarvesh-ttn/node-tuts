@@ -1,3 +1,4 @@
+        // Code eg of sync and async file reading
 // async file reading
 // const fs = require('fs');
 // fs.readFile('../../sample.txt','utf-8',function (err,resp){
