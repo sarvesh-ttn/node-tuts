@@ -1,3 +1,4 @@
+// code for color picker module
 class Color {
     constructor(name, code) {
       this.name = name;
