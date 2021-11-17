@@ -1,6 +1,6 @@
-This file contains the directions to run this header-bar module. It does not have any dependencies.
+This folder contains the 3 qstn solution. It does not have any dependencies.
 You need to have nodejs installed on your system.
-1.cd to header-bar.
+1.cd to REST-api/header-bar.
 2.on terminal write the command
     node header-server.js
     server will be started on port 8080.
