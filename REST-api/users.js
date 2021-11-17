@@ -39,3 +39,10 @@ const userList =[
 exports.getUser =()=>{
 return userList;
 }
+exports.findUser =(fname)=>{
+    const notFound ="not found";
+    const userData = userList.find((item)=>item.first_name ===fname);
+    if(typeof userData !=="undefined") return userData;
+    else return notFound;
+    
+}
