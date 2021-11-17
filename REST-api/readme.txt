@@ -1,4 +1,4 @@
-This is a readme file for qstns 1 & 2 related to exercise of 16Nov.
+This is a readme file for qstns 1 & 2 related to exercise of 16Nov. It does not have any dependency
 You need to have nodejs installed on your system.
 after cloning the repo
 cd REST-api
