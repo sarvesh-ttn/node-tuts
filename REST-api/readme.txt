@@ -6,7 +6,8 @@ cd REST-api
 For 1 qstn 
 server.js contains rest-api logic and users.js contains dummy data of users.
 1)on the terminal, run node server.js and open http://localhost:8080/ in your browser.
-2) enter http://localhost:8080/users and it will load user data
+2) enter http://localhost:8080/user and it will load user data
+3)enter http://localhost:8080/user?name="" will return data of that user if found else returns not found
 
 For 2 qstn 
 student-server.js contains rest api logic and student-list.js contains dummy data of students.
