@@ -1,10 +1,10 @@
-  
 const express = require("express");
 const axios = require("axios");
 
 const app = express();
+const PORT =8000;
 
-app.get("/users/:username", async (req, res, next) => {
+app.get("/users/:username", async (req, res) => {
 	const { username } = req.params;
 
 	try {
@@ -32,19 +32,11 @@ app.get("/users/:username", async (req, res, next) => {
 
 		res.status(200).json(responseData);
 	} catch (err) {
-		next(err);
+		// next(err);
+		res.send(err)
 	}
 });
 
-app.use((err, req, res, next) => {
-	// console.log(err);
-	if (err.response) {
-		return res.status(err.response.status).json(err.response.data);
-	} else if (err.request) {
-		res.status(500).send({ message: "Something went wrong!" });
-	} else {
-		res.status(500).send({ message: "Something went wrong!" });
-	}
+app.listen(PORT,()=>{
+	console.log(`Server started at port : ${PORT}`);
 });
-
-app.listen(8000);
